@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane layoutX="16.0" layoutY="14.0" prefHeight="572.0" prefWidth="872.0" styleClass="background">
+            <children>
+                <Label alignment="CENTER" layoutX="270.0" layoutY="22.0" styleClass="label-header" text="Tawe-Lib: Pay Fine">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="165.0" layoutY="22.0" styleClass="label-header">
+                    <stylesheets>
+                        <URL value="@Design.css" />
+                    </stylesheets>
+                </Label>
+                <Button layoutX="14.0" layoutY="187.0" mnemonicParsing="false" onAction="#Back" prefWidth="151.0" text="Back" />
+                <Button layoutX="14.0" layoutY="217.0" mnemonicParsing="false" onAction="#Pay" prefWidth="151.0" text="Pay Fine" />
+                <TableView fx:id="table" layoutX="175.0" layoutY="97.0" onMouseClicked="#Click" prefHeight="400.0" prefWidth="600.0">
+                    <stylesheets>
+                        <URL value="@Design.css" />
+                    </stylesheets>
+                </TableView>
+                <TextField fx:id="input" layoutX="15.0" layoutY="123.0" promptText="UserId" />
+                <Button layoutX="14.0" layoutY="155.0" mnemonicParsing="false" onAction="#Search" prefWidth="151.0" text="Search" />
+                <Label fx:id="badInput" layoutX="15.0" layoutY="97.0" />
+            </children>
+            <stylesheets>
+                <URL value="@Design.css" />
+            </stylesheets>
+        </Pane>
+    </children>
+</fx:root>

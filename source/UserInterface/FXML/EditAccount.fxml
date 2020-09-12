@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane layoutX="14.0" layoutY="14.0" prefHeight="572.0" prefWidth="872.0" styleClass="background">
+            <children>
+                <Label alignment="CENTER" layoutX="232.0" layoutY="22.0" styleClass="label-header" text="Tawe-Lib: Edit Account">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="165.0" layoutY="22.0" styleClass="label-header">
+                    <stylesheets>
+                        <URL value="@Design.css" />
+                    </stylesheets>
+                </Label>
+                <Button layoutX="14.0" layoutY="97.0" mnemonicParsing="false" onAction="#Back" prefWidth="151.0" text="Back" />
+                <Button layoutX="351.0" layoutY="508.0" mnemonicParsing="false" onAction="#Save" prefHeight="50.0" prefWidth="150.0" text="Save Changes" />
+                <Label alignment="CENTER_LEFT" layoutX="300.0" layoutY="120.0" text="First Name:" />
+                <Label alignment="CENTER_LEFT" layoutX="300.0" layoutY="97.0" text="Username" />
+                <Label alignment="CENTER_LEFT" layoutX="300.0" layoutY="150.0" text="Last Name:" />
+                <Label alignment="CENTER_LEFT" layoutX="300.0" layoutY="180.0" text="Mobile Number:" />
+                <TextField fx:id="firstName" layoutX="420.0" layoutY="120.0" prefWidth="400.0" />
+                <TextField fx:id="lastName" layoutX="420.0" layoutY="150.0" prefWidth="400.0" />
+                <TextField fx:id="mobile" layoutX="420.0" layoutY="180.0" prefWidth="400.0" />
+                <TextField fx:id="username" layoutX="420.0" layoutY="90.0" prefWidth="400.0" />
+                <Button layoutX="643.0" layoutY="308.0" mnemonicParsing="false" onAction="#DrawAvatar" prefWidth="151.0" text="Draw Avatar" />
+                <HBox layoutX="120.0" layoutY="360.0" style="-fx-background-color: grey;">
+                    <children>
+                        <BorderPane fx:id="img1" style="-fx-border-color: white;">
+                            <center>
+                                <ImageView fitHeight="100.0" fitWidth="150.0" onMouseClicked="#Clicked1" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@Avatar/def1.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="img2" style="-fx-border-color: white; -fx-border-image-width: 55;">
+                            <center>
+                                <ImageView fitHeight="100.0" fitWidth="150.0" onMouseClicked="#Clicked2" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@Avatar/def2.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="img3" style="-fx-border-color: white; -fx-border-image-width: 55;">
+                            <center>
+                                <ImageView fitHeight="100.0" fitWidth="150.0" onMouseClicked="#Clicked3" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@Avatar/def3.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="img4" style="-fx-border-color: white; -fx-border-image-width: 55;">
+                            <center>
+                                <ImageView fitHeight="100.0" fitWidth="150.0" onMouseClicked="#Clicked4" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@Avatar/def4.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="img5" style="-fx-border-color: white; -fx-border-image-width: 55;">
+                            <center>
+                                <ImageView fitHeight="100.0" fitWidth="150.0" onMouseClicked="#Clicked5" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@Avatar/def5.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="img6" style="-fx-border-color: white; -fx-border-image-width: 55;">
+                            <center>
+                                <ImageView fitHeight="100.0" fitWidth="150.0" onMouseClicked="#Clicked6" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@Avatar/def6.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                    </children>
+                </HBox>
+                <CheckBox fx:id="customAvatar" layoutX="418.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#CustomClicked" text="Use Custom Avatar" textFill="WHITE" />
+                <TextField fx:id="adress" layoutX="420.0" layoutY="210.0" prefWidth="400.0" />
+                <Label alignment="CENTER_LEFT" layoutX="300.0" layoutY="210.0" text="Adress:" />
+                <Label alignment="CENTER_LEFT" layoutX="300.0" layoutY="240.0" text="Adress 2 :" />
+                <TextField fx:id="adress2" layoutX="420.0" layoutY="240.0" prefWidth="400.0" />
+                <Label fx:id="error" layoutX="350.0" layoutY="468.0" />
+                <TextField fx:id="postCode" layoutX="420.0" layoutY="270.0" prefWidth="400.0" />
+                <Label alignment="CENTER_LEFT" layoutX="300.0" layoutY="270.0" text="Post Code" />
+            </children>
+            <stylesheets>
+                <URL value="@Design.css" />
+            </stylesheets>
+        </Pane>
+    </children>
+</fx:root>

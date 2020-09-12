@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane layoutX="14.0" layoutY="14.0" prefHeight="572.0" prefWidth="872.0" styleClass="background">
+            <children>
+                <TableView fx:id="table" layoutX="199.0" layoutY="97.0" prefHeight="400.0" prefWidth="600.0">
+                    <columns>
+                    </columns>
+                    <stylesheets>
+                        <URL value="@Design.css" />
+                    </stylesheets>
+                </TableView>
+                <Label alignment="CENTER" layoutX="209.0" layoutY="14.0" styleClass="label-header" text="Tawe-Lib: View Borrowed">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="169.0" layoutY="22.0" styleClass="label-header">
+                    <stylesheets>
+                        <URL value="@Design.css" />
+                    </stylesheets>
+                </Label>
+                <Button layoutX="14.0" layoutY="97.0" mnemonicParsing="false" onAction="#Back" prefWidth="151.0" text="Back" />
+            </children>
+            <stylesheets>
+                <URL value="@Design.css" />
+            </stylesheets>
+        </Pane>
+    </children>
+</fx:root>

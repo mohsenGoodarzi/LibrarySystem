@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane layoutX="15.0" layoutY="14.0" prefHeight="172.0" prefWidth="371.0" styleClass="background">
+            <children>
+                <Button layoutX="299.0" layoutY="14.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="58.0" text="Cancel" />
+                <Button layoutX="110.0" layoutY="123.0" mnemonicParsing="false" onAction="#pay" prefWidth="151.0" text="PAY" />
+                <TextField fx:id="user" editable="false" layoutX="111.0" layoutY="14.0" style="-fx-background-color: lightGrey;" />
+                <TextField fx:id="toPay" layoutX="111.0" layoutY="74.0" />
+                <Label layoutX="43.0" layoutY="18.0" text="User:" />
+                <Label layoutX="40.0" layoutY="78.0" text="Payed:" />
+                <Label layoutX="43.0" layoutY="48.0" text="Total:" />
+                <TextField fx:id="fines" editable="false" layoutX="111.0" layoutY="44.0" style="-fx-background-color: lightGrey;" />
+                <Label fx:id="error" layoutX="111.0" layoutY="106.0" />
+            </children>
+            <stylesheets>
+                <URL value="@Design.css" />
+            </stylesheets>
+        </Pane>
+    </children>
+</fx:root>

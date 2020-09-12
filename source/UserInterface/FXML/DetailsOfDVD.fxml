@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane layoutX="14.0" layoutY="15.0" prefHeight="449.0" prefWidth="572.0" styleClass="background">
+            <children>
+                <Label alignment="CENTER" layoutX="-18.0" layoutY="14.0" prefHeight="58.0" prefWidth="600.0" styleClass="label-header" text="Tawe Lib - Details">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="resourceImage" fitHeight="329.0" fitWidth="180.0" layoutX="14.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Archive/Logo.png" />
+                    </image>
+                </ImageView>
+                <VBox layoutX="205.0" layoutY="94.0" prefHeight="256.0" prefWidth="119.0">
+                    <children>
+                        <Label text="DVD ID:">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <Label text="Name:">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <Label text="Director:">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <Label text="Run Time:">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <Label text="Language:">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <Label text="Subtitles:">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <TextField fx:id="ID" editable="false" layoutX="324.0" layoutY="101.0" />
+                <TextField fx:id="name" editable="false" layoutX="324.0" layoutY="137.0" />
+                <TextField fx:id="director" editable="false" layoutX="324.0" layoutY="176.0" />
+                <TextField fx:id="runtime" editable="false" layoutX="324.0" layoutY="210.0" />
+                <TextField fx:id="language" editable="false" layoutX="324.0" layoutY="241.0" />
+                <TextField fx:id="subtitles" editable="false" layoutX="324.0" layoutY="277.0" />
+                <Button fx:id="close" layoutX="473.0" layoutY="397.0" mnemonicParsing="false" onAction="#Close" prefHeight="25.0" prefWidth="79.0" text="Close" />
+                <Button fx:id="request" layoutX="324.0" layoutY="310.0" mnemonicParsing="false" onAction="#request" prefHeight="16.0" prefWidth="149.0" text="Request" />
+            </children>
+            <stylesheets>
+                <URL value="@Design.css" />
+            </stylesheets>
+        </Pane>
+    </children>
+</fx:root>

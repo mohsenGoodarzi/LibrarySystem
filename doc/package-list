@@ -1,0 +1,9 @@
+
+DatabaseLayout
+LoginManager
+Models.Logs
+Models.Resources
+Models.Users
+Models.ViewModels
+UserInterface
+UserInterface.FXML
